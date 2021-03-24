@@ -1,0 +1,10 @@
+From ubuntu:18.04
+Run apt update
+Run apt install openjdk-8-jdk wget -y
+Run wget https://referenceappkhaja.s3-us-west-2.amazonaws.com/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar
+Expose 8080
+cmd ["java","-jar","spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar"]
+
+
+
+
