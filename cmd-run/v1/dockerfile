@@ -1,5 +1,5 @@
 FROM mongo:4.4
 LABEL creator="sanjeev"
 LABEL gmail="sanjeev@gmail.com"
-RUN yum update -y && yum install httpd -y
+RUN apt update -y && apt install httpd -y
 CMD ["echo","welcome to my world"]
