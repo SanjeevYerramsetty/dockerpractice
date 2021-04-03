@@ -1,11 +1,11 @@
 version:"3.9"
 services:
-    gol:
-        build: ./gol
+  gol:
+    build: ./gol
     ports:
-        8080:80
-    spc:
-        build: ./spc
+        - 8080:8080
+  spc:
+    build: ./spc
     ports:
-        8081:8080
+       - 8081:8080
 
