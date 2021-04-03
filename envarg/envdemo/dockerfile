@@ -1,0 +1,9 @@
+From openjdk:8
+Label author="sanjeev harsha"
+Label maintainer="sanjeevharsha@gmail.com"
+ENV application='/springpetlinic.jar'
+ARG downloadlocation
+Add ${downloadlocation} ${application}
+Expose 8080
+cmd ["java","-jar",${downloadlocation}]
+     
