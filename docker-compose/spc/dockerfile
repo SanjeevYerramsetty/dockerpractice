@@ -1,0 +1,6 @@
+From openjdk:11
+Label author="sanjeev harsha"
+Add https://referenceappkhaja.s3-us-west-2.amazonaws.com/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar /spring-petclinic.jar
+Expose 8080
+cmd ["java","-jar","/spring-petclinic.jar"]
+     
