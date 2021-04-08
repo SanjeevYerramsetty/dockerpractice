@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+    nopcommerce_web:
+        build: .
+        container_name: nopcommerce
+        ports:
+            - 80:80
+
+   
+        
+    
+    
+    nopcommerce_db:
+        image: mysql:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: "harsha1234"
+        volumes:
+            - type: volume
+              source: nopcommerce_data
+              target: /var/lib/mysql
+
+        
+        
+
+    volumes:
+        nopcommerce_data

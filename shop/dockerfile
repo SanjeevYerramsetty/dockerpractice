@@ -1,0 +1,12 @@
+FROM ubuntu:20.04 as builder
+RUN apt update 
+ADD https://github.com/umermansoor/microservices.git /sanju/microservices.git
+RUN cd sanju
+
+FROM openjdk:8
+LABEL author="sanju"
+LABEL organization="sanjeevdevops"
+COPY --from=builder /sanju /sanju-bin
+WORKDIR /sanju-bin
+EXPOSE 80
+CMD ["java","-jar", "/sanju-bin/microservices.git" ] 
