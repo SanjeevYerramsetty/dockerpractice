@@ -10,7 +10,7 @@ metadata:
 spec:
   containers:
     - name: jenkins-container
-      image: jenkins/jenkin
+      image: jenkins/jenkins
       ports:
         - containerPort: 8080
           protocol: TCP 
