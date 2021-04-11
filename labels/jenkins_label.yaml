@@ -1,0 +1,16 @@
+windo---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-demo2
+  labels:
+    environment: developer
+    team: info-ops
+    project: qt-playing
+spec:
+  containers:
+    - name: jenkins-container
+      image: jenkins/jenkin
+      ports:
+        - containerPort: 8080
+          protocol: TCP 
