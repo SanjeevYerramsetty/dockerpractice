@@ -2,7 +2,7 @@
 apiversion: v1
 kind: Configmap
 metadata:
-    name:appconfigmap
+  name:appconfigmap
 data:
-    name1: sanju1
-    name2: sanju2
+  name1: sanju1
+  name2: sanju2
