@@ -1,8 +1,8 @@
 ---
-apiversion: v1
-kind: configmap
+apiVersion: v1
+kind: ConfigMap
 metadata:
   name: appconfigmap
 data:
-  name1: sanju1
-  name2: sanju2
+  name1: value1
+  name2: value2
