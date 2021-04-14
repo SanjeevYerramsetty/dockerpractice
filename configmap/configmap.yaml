@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: appconfigmap
+  name: sanju-dest
 data:
   name1: value1
   name2: value2
