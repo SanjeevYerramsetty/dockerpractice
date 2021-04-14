@@ -12,7 +12,7 @@ spec:
        - -c
        - sleep 1d
       volumeMounts:
-        - name: config-volume
+        - name: config-sanju
           mountPath: /etc/appconfig
   volumes:
     - name: config-sanju
